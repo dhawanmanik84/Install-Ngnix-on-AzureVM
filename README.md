@@ -1,0 +1,1 @@
+# Install-Ngnix-on-Azurevm

@@ -1,12 +1,13 @@
 # Install-Ngnix-on-Azurevm
 
-**Step 1: Create Azure VM using Linux distribution OS in the Azure Portal
-**(Configure the VM as per the requirements)
+Step 1: Create Azure VM using Linux distribution OS in the Azure Portal
+* Configure the VM as per the requirements
 
-**Step 2: Login to the Azure VM using SSH - Make sure Port 22 (SSH) is enabled in the Azure VM’s network security group**
-(Use terminal for Linux/MacOS, Putty for Windows or Azure Cloud Shell)
+Step 2: Login to the Azure VM using SSH 
+* Make sure Port 22 (SSH) is enabled in the Azure VM’s network security group**
+* Use terminal for Linux/MacOS, Putty for Windows or Azure Cloud Shell*
 
-**Step 3: Run the below script to install Nginx **
+Step 3: Run the below script to install Nginx
 
 #!/bin/bash
 # Update the package list
@@ -33,5 +34,5 @@ sudo systemctl restart nginx
 
 echo "Nginx has been installed and configured on $HOSTNAME"
 
-**Step 4: Test VM’s Public IP address in a web browser 
-**(If it doesn’t work re-check the ports enabled in network security group) 
+Step 4: Test VM’s Public IP address in a web browser 
+* If it doesn’t work re-check the ports enabled in network security group

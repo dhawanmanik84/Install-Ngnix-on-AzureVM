@@ -8,7 +8,7 @@
 
 **Step 3: Run the below script to install Nginx **
 
-_#!/bin/bash
+#!/bin/bash
 # Update the package list
 sudo apt-get update
 
@@ -32,6 +32,6 @@ sudo sed -i "s/\$HOSTNAME/$HOSTNAME/" /var/www/html/index.nginx-debian.html
 sudo systemctl restart nginx
 
 echo "Nginx has been installed and configured on $HOSTNAME"
-_
+
 **Step 4: Test VM’s Public IP address in a web browser 
 **(If it doesn’t work re-check the ports enabled in network security group) 
